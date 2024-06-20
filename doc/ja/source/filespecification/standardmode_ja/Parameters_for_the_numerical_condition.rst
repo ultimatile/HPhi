@@ -57,7 +57,7 @@
 
    **形式 :** 整数(デフォルト値は\ ``1``)
 
-   **説明 :** ``method="Lancoz"``\ ではエネルギーの低いものから数えて、
+   **説明 :** ``method="Lanczos"``\ ではエネルギーの低いものから数えて、
    何番目の固有状態を計算するかを指定します。
    ``method="CG"``\ の時には求める固有状態の本数を指定します。
 
@@ -87,7 +87,7 @@
    **説明 :**
    (TPQ法のみで使用) :math:`l-\mathcal{H}/N_{s}`\ の\ :math:`l`\ 。
    ハミルトニアンの各項の係数の絶対値の総和をサイト数で割ったものがデフォルト値になります。
-   cTPQ計算では, ``LargeValue`` は虚時間発展の刻み幅として使われます( :math:`\Delta\tau=1/LargeValue`).
+   cTPQ計算では, ``LargeValue`` は虚時間発展の刻み幅として使われます( :math:`\Delta\tau=1/{\tt LargeValue}`).
    :math:`\Delta\tau` の定義はアルゴリズムの章を見てください(:ref:`Ch:algorithm`) 。
 
 *  ``NumAve``

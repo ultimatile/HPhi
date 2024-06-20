@@ -60,7 +60,7 @@ Lanczos法では、 :math:`\mathcal{K}_{n}({\mathcal H},\vec{x}_{0})`
 
 この定義から、\ :math:`\alpha_{k}`,\ :math:`\beta_{k}` ともに実数であることに注意する必要があります。
 
-これらの正規直交基底が成すKryrov部分空間の中で
+これらの正規直交基底が成すKrylov部分空間の中で
 もとのハミルトニアンに対する固有値問題は、
 
 .. math::
@@ -156,7 +156,7 @@ Lanczos法では、スタンダードモード用の入力ファイル、もし�
 収束判定について
 ^^^^^^^^^^^^^^^^
 
-:math:`{\mathcal H}\Phi` では、\ :math:`T_{n}`\ の対角化にlapackのルーチン
+:math:`{\mathcal H}\Phi` では、\ :math:`T_{n}`\ の対角化にLAPACKのルーチン
 :math:`\rm dsyev`\ を使用しており、
 :math:`T_{n}`\ の基底状態の次の固有値（第一励起状態のエネルギー）
 を収束判定条件に用いています。 デフォルトの設定では、
@@ -184,7 +184,7 @@ Lanczos法では、スタンダードモード用の入力ファイル、もし�
 
 
 .. [#] \http://www.qa.iir.titech.ac.jp/~nishimori/titpack2_new/index-e.html
-.. [#] \M. Sugihara, K. Murota, Theoretical Numerical Linear Algebra, Iwanami Stud-ies in Advanced Mathematics, Iwanami Shoten, Publishers, 2009.
-.. [#] 高速化のために、\In :math:`{\mathcal H}\Phi` ではハミルトニアンの対角成分を表すベクトル1本と,スピン :math:`z` 成分 :math:`S_{z}` 保存, 粒子数保存の場合はその状態を指定するベクトル1本を余計に確保しています。いずれのベクトルの大きさもHilbert空間の次元です。 
+.. [#] \M. Sugihara, K. Murota, Theoretical Numerical Linear Algebra, Iwanami Studies in Advanced Mathematics, Iwanami Shoten, Publishers, 2009.
+.. [#] 高速化のために、\ :math:`{\mathcal H}\Phi` ではハミルトニアンの対角成分を表すベクトル1本と,スピン :math:`z` 成分 :math:`S_{z}` 保存, 粒子数保存の場合はその状態を指定するベクトル1本を余計に確保しています。いずれのベクトルの大きさもHilbert空間の次元です。 
 .. [#] :math:`\tilde{\vec{e}_{i}}`\ の次元は高々Lanczos法の反復回数であることに注意。
 .. [#] \http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/index.html

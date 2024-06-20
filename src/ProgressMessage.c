@@ -30,8 +30,8 @@ const char* cProStartCalcSz = "  Start: Calculate HilbertNum for fixed Sz. \n";
 const char* cProEndCalcSz = "  End  : Calculate HilbertNum for fixed Sz. \n\n";
 const char* cProStartOutputList = "  Start: output list. \n";
 const char* cProEndOutputList = "  End  : output list. \n";
-const char* cProStartCalcDiag = "  Start: Calculate diagaonal components of Hamiltonian. \n";
-const char* cProEndCalcDiag = "  End  : Calculate diagaonal components of Hamiltonian. \n\n";
+const char* cProStartCalcDiag = "  Start: Calculate diagonal components of Hamiltonian. \n";
+const char* cProEndCalcDiag = "  End  : Calculate diagonal components of Hamiltonian. \n\n";
 
 const char* cLogLanczos_EigenValueStart="######  Start: Calculate Lanczos Eigenvalue.  ######\n\n";
 const char* cLogLanczos_EigenValueEnd="\n######  End  : Calculate Lanczos EigenValue.  ######\n\n";

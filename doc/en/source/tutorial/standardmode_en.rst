@@ -230,8 +230,8 @@ and obtain the following standard outputs (the compilation mode is MPI parallel/
    Start: Calculate HilbertNum for fixed Sz.
    End  : Calculate HilbertNum for fixed Sz.
 
-   Start: Calculate diagaonal components of Hamiltonian.
-   End  : Calculate diagaonal components of Hamiltonian.
+   Start: Calculate diagonal components of Hamiltonian.
+   End  : Calculate diagonal components of Hamiltonian.
 
  ######  Eigenvalue with LOBPCG  #######
 
