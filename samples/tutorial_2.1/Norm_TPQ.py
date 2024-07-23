@@ -35,7 +35,7 @@ def mainBasic(num_sample,dir_Norm):
     phys_Z,phys_Ene,phys_Ene2,phys_Sz,phys_Sz2,phys_InvTemp  = CalcBasic(Norm,Ene,Ene2,Sz,Sz2,InvTemp,tpq_type)
 
     log_Z  = np.zeros([num_step],dtype=np.float64)
-    with open("%s/zvo_Norm.dat" % (dir_Norm),'w') as f:
+    with open("%s/Norm.dat" % (dir_Norm),'w') as f:
          tmp_log_Z =  -math.log(Norm[0][0])
          for k in range(0,num_step):
              tmp_log_Z += math.log(Norm[0][k])
