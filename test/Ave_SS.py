@@ -41,7 +41,7 @@ def main():
     #
 
     for cnt_set in range(0,max_set):
-        with open("output/SS_rand%d.dat" % (cnt_set)) as f:
+        with open("output/zvo_SS_rand%d.dat" % (cnt_set)) as f:
             data      = f.read()
             data      = data.split("\n")
             #[s] count not empty elements

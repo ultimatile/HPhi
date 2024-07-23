@@ -103,21 +103,21 @@ int CalcByTEM(
     }
   }
 
-  sprintf(sdt_phys, "%s", cFileNameSS);
+  sprintf(sdt_phys, cFileNameSS, X->Bind.Def.CDataFileHead);
   if (childfopenMPI(sdt_phys, "w", &fp) != 0) {
     return -1;
   }
   fprintf(fp, "%s",cLogSS);
   fclose(fp);
 
-  sprintf(sdt_norm, "%s", cFileNameNorm);
+  sprintf(sdt_norm, cFileNameNorm, X->Bind.Def.CDataFileHead);
   if (childfopenMPI(sdt_norm, "w", &fp) != 0) {
     return -1;
   }
   fprintf(fp, "%s",cLogNorm);
   fclose(fp);
 
-  sprintf(sdt_flct, "%s", cFileNameFlct);
+  sprintf(sdt_flct, cFileNameFlct, X->Bind.Def.CDataFileHead);
   if (childfopenMPI(sdt_flct, "w", &fp) != 0) {
     return -1;
   }

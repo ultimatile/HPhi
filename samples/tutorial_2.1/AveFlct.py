@@ -26,7 +26,7 @@ set_num=args.nsamples
 np.zeros(set_num)
 
 #Get sample size
-str_ = "./output/Flct_rand0.dat"
+str_ = "./output/zvo_Flct_rand0.dat"
 with open(str_, "r") as f:
     lines = f.readlines()
 DataTmp = np.zeros( (len(lines)-1, set_num) )
@@ -34,7 +34,7 @@ DataSz = np.zeros( (len(lines)-1, set_num) )
 DataChi = np.zeros( (len(lines)-1, set_num) )
 
 for num in range(set_num):
-    str_ = "./output/Flct_rand"+str(num)+".dat"
+    str_ = "./output/zvo_Flct_rand"+str(num)+".dat"
     if os.path.isfile(str_) is not True:
         print('The file {} does not exist.'.format(str_))
         sys.exit()

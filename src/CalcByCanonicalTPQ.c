@@ -77,9 +77,9 @@ int CalcByCanonicalTPQ(
   X->Bind.Def.St=0;
   fprintf(stdoutMPI, "%s", cLogTPQ_Start);
   for (rand_i = 0; rand_i<rand_max; rand_i++){
-    sprintf(sdt_phys, cFileNameSSRand, rand_i);      
-    sprintf(sdt_norm, cFileNameNormRand, rand_i);
-    sprintf(sdt_flct, cFileNameFlctRand, rand_i);
+    sprintf(sdt_phys, cFileNameSSRand, X->Bind.Def.CDataFileHead, rand_i);
+    sprintf(sdt_norm, cFileNameNormRand, X->Bind.Def.CDataFileHead, rand_i);
+    sprintf(sdt_flct, cFileNameFlctRand, X->Bind.Def.CDataFileHead, rand_i);
     Ns = 1.0 * X->Bind.Def.NsiteMPI;
     fprintf(stdoutMPI, cLogTPQRand, rand_i+1, rand_max);
     iret=0;

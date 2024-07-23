@@ -35,7 +35,7 @@ def mainBasic(num_sample,dir_Norm):
     phys_Z,phys_Ene,phys_Ene2,phys_Sz,phys_Sz2,phys_InvTemp  = CalcBasic(Norm,Ene,Ene2,Sz,Sz2,InvTemp,tpq_type)
 
     log_Z  = np.zeros([num_step],dtype=np.float64)
-    with open("%s/Norm.dat" % (dir_Norm),'w') as f:
+    with open("%s/zvo_Norm.dat" % (dir_Norm),'w') as f:
          tmp_log_Z =  -math.log(Norm[0][0])
          for k in range(0,num_step):
              tmp_log_Z += math.log(Norm[0][k])
@@ -73,7 +73,7 @@ def mainPhys(num_sample,dir_Norm,dir_Phys,header):
 
 
 def read_file(num_sample):
-    in_file = "output/Norm_rand0.dat"
+    in_file = "output/zvo_Norm_rand0.dat"
 
     with open("%s" % (in_file)) as f:
         data      = f.read()
@@ -89,7 +89,7 @@ def read_file(num_sample):
     chi         = np.zeros([num_sample,num_step],dtype=np.float64)
 
     for cnt_samp in range(num_sample):
-        in_file = "output/Norm_rand%d.dat" % (cnt_samp)
+        in_file = "output/zvo_Norm_rand%d.dat" % (cnt_samp)
         print(in_file)
 
         with open("%s" % (in_file)) as f:
@@ -101,7 +101,7 @@ def read_file(num_sample):
             Norm[cnt_samp][cnt] = float(tmp[1])**2
             #print(cnt,Norm[cnt])
 
-        in_file = "output/SS_rand%d.dat" %(cnt_samp)
+        in_file = "output/zvo_SS_rand%d.dat" %(cnt_samp)
         print(in_file)
 
         with open("%s" % (in_file)) as f:
@@ -116,7 +116,7 @@ def read_file(num_sample):
             Ene2[cnt_samp][cnt]  = float(tmp[2])
             Spc[cnt_samp][cnt]   = float(tmp[0])*float(tmp[0])*(float(tmp[2])-float(tmp[1])**2)
 
-        in_file = "output/Flct_rand%d.dat" %(cnt_samp)
+        in_file = "output/zvo_Flct_rand%d.dat" %(cnt_samp)
         print(in_file)
 
         with open("%s" % (in_file)) as f:
