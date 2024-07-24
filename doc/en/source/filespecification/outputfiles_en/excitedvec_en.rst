@@ -5,7 +5,7 @@
 eigenvec.dat
 ------------
 
-When OutputExcitedVec=1 in a CalcMod file, the excited vector calculated by using the input vector and excited operators defined in parr.def is outputted.
+When OutputExcitedVec=1 in a CalcMod file, the excited vector calculated by using the input vector and excited operators defined in pair.def is outputted.
 An example of the file format is as follows.
 
 ::
@@ -46,7 +46,7 @@ Parameters
 
    **Type :** Int
 
-   **Description :** Dimenssions of the excited vector.
+   **Description :** Dimensions of the excited vector.
 
 *  [double01], [double02]
 

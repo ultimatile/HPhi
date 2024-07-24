@@ -98,7 +98,7 @@ Parameters for the numerical condition
    the Hamiltonian is used as :math:`l`. Thus, the default value of
    :math:`l` is taken as the summation of the absolute values of each
    coefficient in the Hamiltonian divided by the number of sites.
-   In the cTPQ calculation, ``LargeValue`` is used as :math:`\Delta\tau=1/LargeValue`.
+   In the cTPQ calculation, ``LargeValue`` is used as :math:`\Delta\tau=1/{\tt LargeValue}`.
    The definition of :math:`\Delta\tau` is explained in :ref:`Ch:algorithm`.
 
 *  ``NumAve``
